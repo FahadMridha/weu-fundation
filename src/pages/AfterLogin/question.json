@@ -1,0 +1,196 @@
+[
+    {
+        "_id": "62e8d993a3a31f22e3437255",
+        "question": "What will you use Nansen for?",
+        "options": [
+            {
+                "option": "Work",
+                "isCorrect": false
+            },
+            {
+                "option": "Personal",
+                "isCorrect": false
+            },
+            {
+                "option": "Both",
+                "isCorrect": true
+            }
+        ]
+    },
+    {
+        "_id": "62e8d993a3a31f22e3437257",
+        "question": " If you see the following import in a file, what is being used for state management in the component?",
+        "options": [
+            {
+                "option": "React Hooks",
+                "isCorrect": true
+            },
+            {
+                "option": "stateful components",
+                "isCorrect": false
+            },
+            {
+                "option": "math",
+                "isCorrect": false
+            },
+            {
+                "option": "Class Component",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "_id": "62e8d993a3a31f22e343725d",
+        "question": " When do you use useLayoutEffect?",
+        "options": [
+            {
+                "option": "to optimize for all devices",
+                "isCorrect": false
+            },
+            {
+                "option": "to complete the update",
+                "isCorrect": false
+            },
+            {
+                "option": "to change the layout of the screen",
+                "isCorrect": false
+            },
+            {
+                "option": "when you need the browser to paint before the effect runs",
+                "isCorrect": true
+            }
+        ]
+    },
+    {
+        "_id": "62e8d993a3a31f22e343725a",
+        "question": "What is the name of the tool used to take JSX and turn it into createElement calls?",
+        "options": [
+            {
+                "option": "JSX Editor",
+                "isCorrect": false
+            },
+            {
+                "option": "ReactDOM",
+                "isCorrect": false
+            },
+            {
+                "option": "Browser Buddy",
+                "isCorrect": false
+            },
+            {
+                "option": "Babel",
+                "isCorrect": true
+            }
+        ]
+    },
+    {
+        "_id": "62e8d993a3a31f22e3437260",
+        "question": "What is the children prop?",
+        "options": [
+            {
+                "option": "a property that adds child components to state",
+                "isCorrect": false
+            },
+            {
+                "option": "a property that lets you pass components as data to other components",
+                "isCorrect": true
+            },
+            {
+                "option": "a property that lets you set an array as a property",
+                "isCorrect": false
+            },
+            {
+                "option": "a property that lets you pass data to child elements",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "_id": "62e8d993a3a31f22e3437258",
+        "question": " What is the testing library most often associated with React?",
+        "options": [
+            {
+                "option": "Mocha",
+                "isCorrect": false
+            },
+            {
+                "option": "Chai",
+                "isCorrect": false
+            },
+            {
+                "option": "Sinon",
+                "isCorrect": false
+            },
+            {
+                "option": "Jest",
+                "isCorrect": true
+            }
+        ]
+    },
+    {
+        "_id": "62e8d993a3a31f22e3437262",
+        "question": "Which of these terms commonly describe React applications?",
+        "options": [
+            {
+                "option": "declarative",
+                "isCorrect": true
+            },
+            {
+                "option": "integrated",
+                "isCorrect": false
+            },
+            {
+                "option": "closed",
+                "isCorrect": false
+            },
+            {
+                "option": "imperative",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "_id": "62e8d993a3a31f22e3437261",
+        "question": "Which attribute do you use to replace innerHTML in the browser DOM?",
+        "options": [
+            {
+                "option": "injectHTML",
+                "isCorrect": false
+            },
+            {
+                "option": "dangerouslySetInnerHTML",
+                "isCorrect": true
+            },
+            {
+                "option": "weirdSetInnerHTML",
+                "isCorrect": false
+            },
+            {
+                "option": "strangeHTML",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "_id": "62e8d993a3a31f22e343725c",
+        "question": "What can you use to handle code splitting?",
+        "options": [
+            {
+                "option": "React.memo",
+                "isCorrect": false
+            },
+            {
+                "option": "React.split",
+                "isCorrect": false
+            },
+            {
+                "option": "React.lazy",
+                "isCorrect": true
+            },
+            {
+                "option": "React.fallback",
+                "isCorrect": false
+            }
+        ]
+    }
+]

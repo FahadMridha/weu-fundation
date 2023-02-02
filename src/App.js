@@ -1,13 +1,14 @@
-import logo from "./logo.svg";
-import "./App.css";
+import './App.css';
+import AfterLogin from './pages/AfterLogin/AfterLogin';
 import Login from "./pages/login/Login";
 
 function App() {
   return (
-    <div className="">
+    <div className='bg-black' >
       <Login />
+      <AfterLogin></AfterLogin>
     </div>
-  );
+  )
 }
 
 export default App;
