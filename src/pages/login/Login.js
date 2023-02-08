@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
-import auth from '../../firebase.init';
 import { useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
 
 
 
@@ -36,7 +36,7 @@ const Login = () => {
 
     return (
 
-        <div className="w-full max-w-md p-8 space-y-3 rounded-xl bg-gray-900 text-gray-100 mx-auto my-5">
+        <div className="w-full max-w-md p-8 space-y-3 rounded-xl bg-gray-900 text-gray-100 mx-auto my-5 mt-[100px]">
             <h1 className="text-2xl font-bold text-center">Login</h1>
             <form onSubmit={handleSubmit(handelLogin)} novalidate="" action="" className="space-y-6 ng-untouched ng-pristine ng-valid">
                 <div className="space-y-1 text-sm">

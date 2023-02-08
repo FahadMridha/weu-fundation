@@ -40,22 +40,8 @@ const SignUp = () => {
         toast.success("Verification email send.");
         toast.success("User create successfully");
 
-        navigate('/')
+        navigate('/fqa')
 
-
-
-        fetch(`http://localhost:5000/user`, {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json',
-            },
-            body: JSON.stringify(data)
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                toast.success("Successfully Update Your data")
-            })
 
 
     }
