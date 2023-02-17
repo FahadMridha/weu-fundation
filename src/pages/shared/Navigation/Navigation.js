@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import { signOut } from 'firebase/auth';
 import auth from '../../../firebase.init';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import Searchbar from './Searchbar';
 
 const Navigation = () => {
 
@@ -15,53 +16,47 @@ const Navigation = () => {
 
     }
 
-    const activeStyle = 'flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-violet-400 dark:border-violet-400'
-    const normalLink = 'flex items-center px-4 -mb-1 border-b-2 dark:border-transparent'
+    const activeStyle = 'flex items-center px-4 -mb-1 border-b-2   text-black  border-violet-100'
+    const normalLink = 'flex items-center px-4 -mb-1 border-b-2 '
 
 
     return (
 
-        <header className="p-4 dark:bg-gray-800 dark:text-gray-800">
+        <header className="p-4  text-gray-100 bg-transparent">
             <div className="container flex justify-between h-16 mx-auto">
-                <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="flex items-center p-2">
-                    <span>Prognosis</span>
-                </a>
+                <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                        isActive ? activeStyle : normalLink
+                    }
+                >
+                    Community
+                </NavLink>
                 <ul className="items-stretch hidden space-x-3 lg:flex">
 
                     <li className="flex">
-                        <NavLink
-                            to="/"
-                            className={({ isActive }) =>
-                                isActive ? activeStyle : normalLink
-                            }
-                        >
-                            Home
-                        </NavLink>
+                        <Searchbar></Searchbar>
+
                     </li>
-                    <li className="flex">
-                        <NavLink
-                            to="/about"
-                            className={({ isActive }) =>
-                                isActive ? activeStyle : normalLink
-                            }
-                        >
-                            Join Mess
-                        </NavLink>
-                    </li>
-                    <li className="flex">
-                        <NavLink
-                            to="/dashboard"
-                            className={({ isActive }) =>
-                                isActive ? activeStyle : normalLink
-                            }
-                        >
-                            Dashbord
-                        </NavLink>
-                    </li>
+
+
+
+                    <NavLink
+                        to="/login"
+                        className="mt-5  bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                    >
+                        login
+                    </NavLink>
 
 
                 </ul>
-                <div className="items-center flex-shrink-0 hidden lg:flex">
+
+                <button className="p-4 lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6  text-gray-100">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                {/* <div className="items-center flex-shrink-0 hidden lg:flex">
 
 
                     <NavLink className='text-white'>{user?.email} </NavLink>
@@ -75,12 +70,8 @@ const Navigation = () => {
 
 
 
-                </div>
-                <button className="p-4 lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 dark:text-gray-100">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
+                </div> */}
+
             </div>
         </header >
 
