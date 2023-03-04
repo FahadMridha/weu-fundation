@@ -29,7 +29,7 @@ const Login = () => {
                   })}
                   placeholder="Email address"
                   type="email"
-                  className="p-2 rounded-lg bg-teal-900 border-gray-500 w-full max-w-xs"
+                  className=" border p-2 rounded-lg bg-teal-900 border-gray-500 w-full max-w-xs"
                 />
                 {errors.email && (
                   <p className="text-red-600">{errors.email?.message}</p>
@@ -46,13 +46,13 @@ const Login = () => {
                   })}
                   placeholder="Password"
                   type="password"
-                  className="p-2 rounded-lg bg-teal-900 border-gray-900 w-full max-w-xs"
+                  className="border p-2 rounded-lg bg-teal-900 border-gray-500 w-full max-w-xs"
                 />
                 {errors.password && (
                   <p className="text-red-600">{errors.password?.message}</p>
                 )}
                 <label className="label">
-                  <span className=""> Forgate password?</span>
+                  <span className="cursor-pointer"> Forgate password?</span>
                 </label>
               </div>
 
@@ -69,7 +69,10 @@ const Login = () => {
             </div>
             <p>
               No account ?
-              <span to="/signup" className="ml-1 text-emerald-400">
+              <span
+                to="/signup"
+                className="ml-1 cursor-pointer text-emerald-400"
+              >
                 Sign up now
               </span>
             </p>
