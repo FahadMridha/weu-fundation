@@ -45,7 +45,7 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: #5dccff;
+  /* background: #1a1c1d; */
   mix-blend-mode: overlay;
 }
 
